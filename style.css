@@ -1,0 +1,123 @@
+* {
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+  padding: 0px;
+  margin: 0px;
+}
+
+.First_page {
+  height: 100vh;
+  width: 100vw;
+  background: url("./src/images/bg_1.jpg");
+  opacity: 0.9;
+  background-size: 100% 100%;
+}
+
+.First_page .Nav_bar {
+  height: 15%;
+  width: 100%;
+  border: 2px solid black;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  padding: 0px 35px;
+  position: fixed;
+}
+
+@media (max-width: 1020px) {
+  .First_page .Nav_bar {
+    background-color: black;
+  }
+}
+
+@media (max-width: 300px) {
+  .First_page .Nav_bar {
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    -webkit-box-pack: space-evenly;
+        -ms-flex-pack: space-evenly;
+            justify-content: space-evenly;
+  }
+}
+
+.First_page .Nav_bar .Hookup {
+  font-size: 24px;
+  font-weight: bold;
+}
+
+.First_page .Nav_bar .Hookup a {
+  text-decoration: none;
+  color: white;
+}
+
+.First_page .Nav_bar .Hookup a:hover {
+  color: black;
+}
+
+@media (max-width: 1020px) {
+  .First_page .Nav_bar .list_items {
+    display: none;
+  }
+}
+
+.First_page .Nav_bar .list_items ol {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.First_page .Nav_bar .list_items ol li {
+  padding: 0px 20px;
+  list-style: none;
+}
+
+.First_page .Nav_bar .list_items ol li a {
+  text-decoration: none;
+  color: white;
+  border-bottom: none;
+  -webkit-transition: 0.1s;
+  transition: 0.1s;
+}
+
+.First_page .Nav_bar .list_items ol li a:hover {
+  border-bottom: 2px solid #ff879b;
+}
+
+.First_page .Nav_bar .click {
+  display: none;
+}
+
+@media (max-width: 1020px) {
+  .First_page .Nav_bar .click {
+    display: block;
+  }
+}
+
+.First_page .Nav_bar .click a {
+  text-decoration: none;
+  color: gray;
+}
+
+.First_page .Nav_bar .click Button {
+  font-size: 24px;
+  background: transparent;
+  border: none;
+}
+
+.Two_page {
+  height: 100vh;
+  width: 100vw;
+  background-color: aqua;
+}
+/*# sourceMappingURL=style.css.map */
