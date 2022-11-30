@@ -1,0 +1,25 @@
+@media (max-width:1020px) {
+
+    .Nav_bar {
+        background-color: black;
+
+        .list_items {
+            display: none;
+        }
+
+        .click {
+            display: block;
+        }
+    }
+}
+
+
+
+
+
+@media (max-width:320px) {
+    .Nav_bar {
+        flex-direction: column;
+    }
+
+}
