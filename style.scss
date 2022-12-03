@@ -1,5 +1,5 @@
 @import url('https://fonts.googleapis.com/css2?family=Great+Vibes&family=Noto+Serif+Khojki&display=swap');
-
+@import url('https://fonts.googleapis.com/css2?family=Great+Vibes&family=Libre+Caslon+Text&family=Noto+Serif+Khojki&display=swap');
 
 * {
     box-sizing: border-box;
@@ -96,6 +96,9 @@
 
 @import "./_media.scss";
 
+// Nav_bar2
+
+
 // First_page
 .First_page {
     height: 100vh;
@@ -110,7 +113,7 @@
     .First_div {
         height: 70%;
         width: 70%;
-        // border: 2px solid red;
+        border: 2px solid red;
         display: flex;
         flex-direction: column;
         align-items: center;
@@ -128,31 +131,32 @@
 
         @media (max-width:600px) {
             font-size: 1.5rem;
+            height: 50%;
         }
 
         @media (max-width:445px) {
             font-size: 1.3rem;
-            height: 65%;
+            height: 45%;
         }
 
         @media (max-width:380px) {
             font-size: 1.0rem;
-            height: 55%;
+            height: 40%;
         }
 
         @media (max-width:310px) {
             font-size: 0.8rem;
-            height: 45%;
+            height: 35%;
         }
 
         .rose {
-            // border: 2px solid blue;
+            border: 2px solid blue;
             font-size: 1.5em;
             opacity: 0.9;
         }
 
         .linking {
-            // border: 2px solid blue;
+            border: 2px solid blue;
             display: flex;
             align-items: center;
             font-size: 0.3em;
@@ -180,15 +184,15 @@
         }
 
         .Name {
-            // border: 2px solid blue;
+            border: 2px solid blue;
             font-family: 'Great Vibes', cursive;
             font-size: 2em;
         }
 
         .Total_days {
-            height: calc(100%/4);
-            width: calc(100%/1);
-            // border: 2px solid blue;
+            // height: calc(100%/4);
+            // width: calc(100%/1);
+            border: 2px solid blue;
             font-size: 1em;
             display: flex;
             align-items: center;
@@ -201,7 +205,8 @@
                 display: flex;
                 flex-direction: column;
                 align-items: center;
-                // border: 2px solid orangered;
+                border: 2px solid orangered;
+                margin: 0px 15px;
 
                 .Number {
                     font-size: 1em;
@@ -221,37 +226,114 @@
 
 }
 
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
 // Second_page
 .Second_page {
+    // height: 100vh;
+    // width: 100vw;
+    background-color: white;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+    .Second_div {
+        height: 100%;
+        width: 80%;
+        border: 2px solid black;
+        display: flex;
+        align-items: stretch;
+
+        @media (max-width:760px) {
+            height: fit-content;
+            flex-direction: column;
+            width: 90%;
+
+
+        }
+
+        .mar_img {
+            // height: 100%;
+            width: 50%;
+            background: url("./src/images/about.jpg");
+            background-size: cover;
+            background-position: top center;
+            border: 2px solid orange;
+
+
+            @media (max-width:760px) {
+                height: 60vh;
+                width: 100%;
+                background-position: center;
+
+            }
+        }
+
+        .mar_details {
+            height: 100%;
+            width: 50%;
+            border: 2px solid red;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            justify-content: center;
+            font-weight: bolder;
+            color: gray;
+            font-family: 'Libre Caslon Text', serif;
+            font-size: 14px;
+
+            @media (max-width:760px) {
+                height: auto;
+                width: 100%;
+            }
+
+
+            .join,
+            .name,
+            .celebration,
+            .starting,
+            .PAUL {
+                line-height: 30px;
+                display: flex;
+                flex-direction: column;
+                align-items: center;
+                justify-content: center;
+                margin: 20px 0px;
+            }
+
+
+            .name {
+
+                font-size: 3.5em;
+
+                .s1 {
+                    color: rgb(254, 128, 149);
+                    font-family: 'Great Vibes', cursive;
+                    margin-bottom: 10px;
+                }
+
+                .s2 {
+                    opacity: 0.5;
+                }
+
+            }
+
+
+            .celebration {
+
+
+                .day_in {
+                    font-size: 2.4em;
+                    font-weight: normal;
+                    margin-top: 10px;
+
+                }
+            }
+        }
+
+    }
+}
+
+// Three_page
+.Three_page {
     height: 100vh;
-    background-color: aqua;
+    background-color: rebeccapurple;
 }

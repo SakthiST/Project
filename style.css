@@ -1,4 +1,5 @@
 @import url("https://fonts.googleapis.com/css2?family=Great+Vibes&family=Noto+Serif+Khojki&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Great+Vibes&family=Libre+Caslon+Text&family=Noto+Serif+Khojki&display=swap");
 * {
   -webkit-box-sizing: border-box;
           box-sizing: border-box;
@@ -127,6 +128,7 @@
 .First_page .First_div {
   height: 70%;
   width: 70%;
+  border: 2px solid red;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -158,36 +160,39 @@
 @media (max-width: 600px) {
   .First_page .First_div {
     font-size: 1.5rem;
+    height: 50%;
   }
 }
 
 @media (max-width: 445px) {
   .First_page .First_div {
     font-size: 1.3rem;
-    height: 65%;
+    height: 45%;
   }
 }
 
 @media (max-width: 380px) {
   .First_page .First_div {
     font-size: 1.0rem;
-    height: 55%;
+    height: 40%;
   }
 }
 
 @media (max-width: 310px) {
   .First_page .First_div {
     font-size: 0.8rem;
-    height: 45%;
+    height: 35%;
   }
 }
 
 .First_page .First_div .rose {
+  border: 2px solid blue;
   font-size: 1.5em;
   opacity: 0.9;
 }
 
 .First_page .First_div .linking {
+  border: 2px solid blue;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -222,13 +227,13 @@
 }
 
 .First_page .First_div .Name {
+  border: 2px solid blue;
   font-family: 'Great Vibes', cursive;
   font-size: 2em;
 }
 
 .First_page .First_div .Total_days {
-  height: calc(100%/4);
-  width: calc(100%/1);
+  border: 2px solid blue;
   font-size: 1em;
   display: -webkit-box;
   display: -ms-flexbox;
@@ -255,6 +260,8 @@
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
+  border: 2px solid orangered;
+  margin: 0px 15px;
 }
 
 .First_page .First_div .Total_days .Days .Number,
@@ -284,7 +291,133 @@
 }
 
 .Second_page {
+  background-color: white;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+}
+
+.Second_page .Second_div {
+  height: 100%;
+  width: 80%;
+  border: 2px solid black;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: stretch;
+      -ms-flex-align: stretch;
+          align-items: stretch;
+}
+
+@media (max-width: 760px) {
+  .Second_page .Second_div {
+    height: -webkit-fit-content;
+    height: -moz-fit-content;
+    height: fit-content;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    width: 90%;
+  }
+}
+
+.Second_page .Second_div .mar_img {
+  width: 50%;
+  background: url("./src/images/about.jpg");
+  background-size: cover;
+  background-position: top center;
+  border: 2px solid orange;
+}
+
+@media (max-width: 760px) {
+  .Second_page .Second_div .mar_img {
+    height: 60vh;
+    width: 100%;
+    background-position: center;
+  }
+}
+
+.Second_page .Second_div .mar_details {
+  height: 100%;
+  width: 50%;
+  border: 2px solid red;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  font-weight: bolder;
+  color: gray;
+  font-family: 'Libre Caslon Text', serif;
+  font-size: 14px;
+}
+
+@media (max-width: 760px) {
+  .Second_page .Second_div .mar_details {
+    height: auto;
+    width: 100%;
+  }
+}
+
+.Second_page .Second_div .mar_details .join,
+.Second_page .Second_div .mar_details .name,
+.Second_page .Second_div .mar_details .celebration,
+.Second_page .Second_div .mar_details .starting,
+.Second_page .Second_div .mar_details .PAUL {
+  line-height: 30px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  margin: 20px 0px;
+}
+
+.Second_page .Second_div .mar_details .name {
+  font-size: 3.5em;
+}
+
+.Second_page .Second_div .mar_details .name .s1 {
+  color: #fe8095;
+  font-family: 'Great Vibes', cursive;
+  margin-bottom: 10px;
+}
+
+.Second_page .Second_div .mar_details .name .s2 {
+  opacity: 0.5;
+}
+
+.Second_page .Second_div .mar_details .celebration .day_in {
+  font-size: 2.4em;
+  font-weight: normal;
+  margin-top: 10px;
+}
+
+.Three_page {
   height: 100vh;
-  background-color: aqua;
+  background-color: rebeccapurple;
 }
 /*# sourceMappingURL=style.css.map */
