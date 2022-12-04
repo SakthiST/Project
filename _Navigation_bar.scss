@@ -1,0 +1,111 @@
+// Nav_bar
+.Nav_bar {
+    height: 70px;
+    width: 100%;
+    // border: 2px solid black;
+    position: fixed;
+    top: 0px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 0px 30px;
+    font-family: 'Times New Roman', Times, serif;
+
+    .Hookup {
+        a {
+            font-size: 1.5rem;
+            font-weight: bold;
+            text-decoration: none;
+            color: white;
+            transition: 0.2s;
+
+            &:hover {
+
+                color: black;
+            }
+        }
+    }
+
+    .list_items {
+        align-items: center;
+
+        ol {
+            display: flex;
+
+            li {
+
+                list-style: none;
+                margin: 0px 20px;
+
+
+
+                a {
+                    text-decoration: none;
+                    color: white;
+
+                }
+
+
+                .line {
+                    height: 3px;
+                    width: 0px;
+                    border-radius: 10px;
+                    background-color: rgb(254, 128, 149);
+                }
+
+                &:hover {
+                    .line {
+                        height: 3px;
+                        width: auto;
+
+                    }
+
+                }
+
+
+            }
+        }
+    }
+
+    .click {
+        display: none;
+
+        Button {
+            background: none;
+            border: none;
+            color: grey;
+            font-size: 1.3rem;
+
+            span {
+
+                padding: 0px 5px;
+            }
+        }
+    }
+}
+
+
+
+
+@media (max-width:1020px) {
+
+    .Nav_bar {
+        background-color: black;
+
+        .list_items {
+            display: none;
+        }
+
+        .click {
+            display: block;
+        }
+    }
+}
+
+
+@media (max-width:320px) {
+    .Nav_bar {
+        flex-direction: column;
+    }
+
+}

@@ -1,0 +1,109 @@
+.Second_page {
+    // height: 100vh;
+    // width: 100vw;
+    background-color: white;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+    .Second_div {
+        height: 100%;
+        width: 80%;
+        border: 3px solid rgba(0, 0, 0, 0.352);
+        border-top: none;
+        border-bottom: none;
+        display: flex;
+        align-items: stretch;
+
+        @media (max-width:760px) {
+            height: fit-content;
+            flex-direction: column;
+            width: 90%;
+
+
+        }
+
+        .mar_img {
+            // height: 100%;
+            width: 50%;
+            background: url("./src/images/about.jpg");
+            background-size: cover;
+            background-position: top center;
+            background-repeat: no-repeat;
+            border-right: 3px solid rgba(0, 0, 0, 0.352);
+
+
+
+
+            @media (max-width:760px) {
+                height: 60vh;
+                width: 100%;
+                background-position: center;
+                border-right: none;
+            }
+        }
+
+        .mar_details {
+            height: 100%;
+            width: 50%;
+            // border: 2px solid red;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            justify-content: center;
+            font-weight: bolder;
+            color: gray;
+            font-family: 'Libre Caslon Text', serif;
+            font-size: 14px;
+
+            @media (max-width:760px) {
+                height: auto;
+                width: 100%;
+            }
+
+
+            .join,
+            .name,
+            .celebration,
+            .starting,
+            .PAUL {
+                line-height: 30px;
+                display: flex;
+                flex-direction: column;
+                align-items: center;
+                justify-content: center;
+                margin: 20px 0px;
+            }
+
+
+            .name {
+
+                font-size: 3.5em;
+
+                .s1 {
+                    color: rgb(254, 128, 149);
+                    font-family: 'Great Vibes', cursive;
+                    margin-bottom: 10px;
+                }
+
+                .s2 {
+                    opacity: 0.5;
+                }
+
+            }
+
+
+            .celebration {
+
+
+                .day_in {
+                    font-size: 2.4em;
+                    font-weight: normal;
+                    margin-top: 10px;
+
+                }
+            }
+        }
+
+    }
+}

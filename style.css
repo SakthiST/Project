@@ -126,9 +126,6 @@
 }
 
 .First_page .First_div {
-  height: 70%;
-  width: 70%;
-  border: 2px solid red;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -145,6 +142,98 @@
   font-size: 3rem;
 }
 
+.First_page .First_div .rose {
+  font-size: 1.5em;
+  opacity: 0.9;
+  margin: 13px 0px;
+}
+
+.First_page .First_div .linking {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  font-size: 0.3em;
+  margin: 13px 0px;
+}
+
+.First_page .First_div .linking .widding {
+  letter-spacing: 6px;
+}
+
+.First_page .First_div .linking .line {
+  height: 3px;
+  width: 100px;
+  border-radius: 10px;
+  background-color: white;
+  margin: 0px 10px;
+}
+
+.First_page .First_div .Name {
+  margin: 13px 0px;
+  font-family: 'Great Vibes', cursive;
+  font-size: 2em;
+}
+
+.First_page .First_div .Total_days {
+  font-size: 1em;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: space-evenly;
+      -ms-flex-pack: space-evenly;
+          justify-content: space-evenly;
+  margin: 13px 0px;
+}
+
+.First_page .First_div .Total_days .Days,
+.First_page .First_div .Total_days .Hours,
+.First_page .First_div .Total_days .Minutes,
+.First_page .First_div .Total_days .seconds {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  margin: 0px 15px;
+}
+
+.First_page .First_div .Total_days .Days .Number,
+.First_page .First_div .Total_days .Hours .Number,
+.First_page .First_div .Total_days .Minutes .Number,
+.First_page .First_div .Total_days .seconds .Number {
+  font-size: 1em;
+}
+
+.First_page .First_div .Total_days .Days .D,
+.First_page .First_div .Total_days .Days .H,
+.First_page .First_div .Total_days .Days .M,
+.First_page .First_div .Total_days .Days .S,
+.First_page .First_div .Total_days .Hours .D,
+.First_page .First_div .Total_days .Hours .H,
+.First_page .First_div .Total_days .Hours .M,
+.First_page .First_div .Total_days .Hours .S,
+.First_page .First_div .Total_days .Minutes .D,
+.First_page .First_div .Total_days .Minutes .H,
+.First_page .First_div .Total_days .Minutes .M,
+.First_page .First_div .Total_days .Minutes .S,
+.First_page .First_div .Total_days .seconds .D,
+.First_page .First_div .Total_days .seconds .H,
+.First_page .First_div .Total_days .seconds .M,
+.First_page .First_div .Total_days .seconds .S {
+  font-size: 0.4em;
+}
+
 @media (max-width: 845px) {
   .First_page .First_div {
     font-size: 2.5rem;
@@ -154,6 +243,12 @@
 @media (max-width: 710px) {
   .First_page .First_div {
     font-size: 2rem;
+  }
+  .First_page .First_div .linking {
+    font-size: 0.6em;
+  }
+  .First_page .First_div .line {
+    display: none;
   }
 }
 
@@ -185,111 +280,6 @@
   }
 }
 
-.First_page .First_div .rose {
-  border: 2px solid blue;
-  font-size: 1.5em;
-  opacity: 0.9;
-}
-
-.First_page .First_div .linking {
-  border: 2px solid blue;
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
-  font-size: 0.3em;
-}
-
-@media (max-width: 710px) {
-  .First_page .First_div .linking {
-    font-size: 0.6em;
-  }
-}
-
-.First_page .First_div .linking .widding {
-  letter-spacing: 6px;
-}
-
-.First_page .First_div .linking .line {
-  height: 3px;
-  width: 100px;
-  border-radius: 10px;
-  background-color: white;
-  margin: 0px 10px;
-}
-
-@media (max-width: 710px) {
-  .First_page .First_div .linking .line {
-    display: none;
-  }
-}
-
-.First_page .First_div .Name {
-  border: 2px solid blue;
-  font-family: 'Great Vibes', cursive;
-  font-size: 2em;
-}
-
-.First_page .First_div .Total_days {
-  border: 2px solid blue;
-  font-size: 1em;
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
-  -webkit-box-pack: space-evenly;
-      -ms-flex-pack: space-evenly;
-          justify-content: space-evenly;
-}
-
-.First_page .First_div .Total_days .Days,
-.First_page .First_div .Total_days .Hours,
-.First_page .First_div .Total_days .Minutes,
-.First_page .First_div .Total_days .seconds {
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-box-orient: vertical;
-  -webkit-box-direction: normal;
-      -ms-flex-direction: column;
-          flex-direction: column;
-  -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
-  border: 2px solid orangered;
-  margin: 0px 15px;
-}
-
-.First_page .First_div .Total_days .Days .Number,
-.First_page .First_div .Total_days .Hours .Number,
-.First_page .First_div .Total_days .Minutes .Number,
-.First_page .First_div .Total_days .seconds .Number {
-  font-size: 1em;
-}
-
-.First_page .First_div .Total_days .Days .D,
-.First_page .First_div .Total_days .Days .H,
-.First_page .First_div .Total_days .Days .M,
-.First_page .First_div .Total_days .Days .S,
-.First_page .First_div .Total_days .Hours .D,
-.First_page .First_div .Total_days .Hours .H,
-.First_page .First_div .Total_days .Hours .M,
-.First_page .First_div .Total_days .Hours .S,
-.First_page .First_div .Total_days .Minutes .D,
-.First_page .First_div .Total_days .Minutes .H,
-.First_page .First_div .Total_days .Minutes .M,
-.First_page .First_div .Total_days .Minutes .S,
-.First_page .First_div .Total_days .seconds .D,
-.First_page .First_div .Total_days .seconds .H,
-.First_page .First_div .Total_days .seconds .M,
-.First_page .First_div .Total_days .seconds .S {
-  font-size: 0.4em;
-}
-
 .Second_page {
   background-color: white;
   display: -webkit-box;
@@ -306,7 +296,9 @@
 .Second_page .Second_div {
   height: 100%;
   width: 80%;
-  border: 2px solid black;
+  border: 3px solid rgba(0, 0, 0, 0.352);
+  border-top: none;
+  border-bottom: none;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -333,7 +325,8 @@
   background: url("./src/images/about.jpg");
   background-size: cover;
   background-position: top center;
-  border: 2px solid orange;
+  background-repeat: no-repeat;
+  border-right: 3px solid rgba(0, 0, 0, 0.352);
 }
 
 @media (max-width: 760px) {
@@ -341,13 +334,13 @@
     height: 60vh;
     width: 100%;
     background-position: center;
+    border-right: none;
   }
 }
 
 .Second_page .Second_div .mar_details {
   height: 100%;
   width: 50%;
-  border: 2px solid red;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -417,7 +410,129 @@
 }
 
 .Three_page {
-  height: 100vh;
-  background-color: rebeccapurple;
+  background-color: white;
+}
+
+.Three_page .Three_div {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  font-size: 16px;
+}
+
+@media (max-width: 580px) {
+  .Three_page .Three_div {
+    font-size: 15px;
+  }
+}
+
+@media (max-width: 400px) {
+  .Three_page .Three_div {
+    font-size: 12px;
+  }
+}
+
+.Three_page .Three_div .top_design {
+  height: 300px;
+  width: 100%;
+  background-image: url("./src/images/top-bg.jpg");
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center;
+}
+
+@media (max-width: 1000px) {
+  .Three_page .Three_div .top_design {
+    height: 300px;
+  }
+}
+
+.Three_page .Three_div .Bride {
+  font-family: 'Great Vibes', cursive;
+  font-size: 4em;
+  color: #fe8095;
+}
+
+.Three_page .Three_div .details_in {
+  width: 80%;
+  margin-top: 40px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+}
+
+@media (max-width: 860px) {
+  .Three_page .Three_div .details_in {
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+  }
+}
+
+.Three_page .Three_div .details_in .box {
+  height: -webkit-fit-content;
+  height: -moz-fit-content;
+  height: fit-content;
+  width: 50%;
+  border: 2px solid gray;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+@media (max-width: 860px) {
+  .Three_page .Three_div .details_in .box {
+    width: 100%;
+  }
+}
+
+.Three_page .Three_div .details_in .box .Men_img {
+  height: 250px;
+  width: 250px;
+  border-radius: 50%;
+  background-image: url("./src/images/groom.jpg");
+  background-size: cover;
+  background-position: center;
+  margin-bottom: 10px;
+}
+
+.Three_page .Three_div .details_in .box .para1 {
+  color: gray;
+  margin: 20px 40px;
+  font-size: 1.5em;
+  line-height: 35px;
+}
+
+.Three_page .Three_div .details_in .box:last-child .Women_img {
+  height: 250px;
+  width: 250px;
+  border-radius: 50%;
+  background-image: url("./src/images/bride.jpg");
+  background-size: cover;
+  background-position: center;
+  margin-bottom: 10px;
+}
+
+.Three_page .Three_div .bottom_design {
+  width: 100%;
+  height: 300px;
+  background-image: url("./src/images/bottom-bg.jpg");
+  background-size: cover;
+  background-position: center;
 }
 /*# sourceMappingURL=style.css.map */

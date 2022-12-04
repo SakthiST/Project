@@ -1,0 +1,161 @@
+.First_page {
+    height: 100vh;
+    background: url("./src/images/bg_1.jpg");
+    background-position: top center;
+    background-size: cover;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    color: white;
+
+    .First_div {
+        // height: 70%;
+        // width: s70%;
+        // border: 2px solid red;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: space-evenly;
+        font-size: 3rem;
+
+
+
+
+
+        .rose {
+            // border: 2px solid blue;
+            font-size: 1.5em;
+            opacity: 0.9;
+            margin: 13px 0px;
+        }
+
+        .linking {
+            // border: 2px solid blue;
+            display: flex;
+            align-items: center;
+            font-size: 0.3em;
+            margin: 13px 0px;
+
+
+
+            .widding {
+                letter-spacing: 6px;
+            }
+
+
+            .line {
+                height: 3px;
+                width: 100px;
+                border-radius: 10px;
+                background-color: white;
+                margin: 0px 10px;
+
+
+            }
+        }
+
+        .Name {
+            margin: 13px 0px;
+            // border: 2px solid blue;
+            font-family: 'Great Vibes', cursive;
+            font-size: 2em;
+        }
+
+        .Total_days {
+            // height: calc(100%/4);
+            // width: calc(100%/1);
+            // border: 2px solid blue;
+            font-size: 1em;
+            display: flex;
+            align-items: center;
+            justify-content: space-evenly;
+            margin: 13px 0px;
+
+            .Days,
+            .Hours,
+            .Minutes,
+            .seconds {
+                display: flex;
+                flex-direction: column;
+                align-items: center;
+                // border: 2px solid orangered;
+                margin: 0px 15px;
+
+                .Number {
+                    font-size: 1em;
+                }
+
+                .D,
+                .H,
+                .M,
+                .S {
+                    font-size: 0.4em;
+                }
+            }
+        }
+    }
+}
+
+
+
+
+
+@media (max-width:845px) {
+    .First_page {
+        .First_div {
+            font-size: 2.5rem;
+        }
+    }
+}
+
+@media (max-width:710px) {
+    .First_page {
+        .First_div {
+            font-size: 2rem;
+
+            .linking {
+                font-size: 0.6em;
+            }
+
+            .line {
+                display: none;
+            }
+        }
+    }
+}
+
+@media (max-width:600px) {
+    .First_page {
+        .First_div {
+            font-size: 1.5rem;
+            height: 50%;
+        }
+    }
+}
+
+@media (max-width:445px) {
+    .First_page {
+        .First_div {
+            font-size: 1.3rem;
+            height: 45%;
+        }
+    }
+}
+
+@media (max-width:380px) {
+    .First_page {
+        .First_div {
+            font-size: 1.0rem;
+            height: 40%;
+        }
+    }
+}
+
+@media (max-width:310px) {
+    .First_page {
+        .First_div {
+            font-size: 0.8rem;
+            height: 35%;
+        }
+    }
+}
