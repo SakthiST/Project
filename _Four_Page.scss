@@ -1,0 +1,187 @@
+.Four_page {
+    background-color: white;
+    // border: 2px solid red;
+    display: flex;
+    justify-content: center;
+
+
+
+    .Four_div {
+        // height: 1300px;
+        width: 80%;
+        // border: 2px solid gray;
+        margin: 50px 0px;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        position: relative;
+
+        @media (max-width:800px) {
+            align-items: flex-start;
+
+        }
+
+        @media (max-width:620px) {
+            width: 90%;
+        }
+
+        @media (max-width:470px) {
+            width: 100%;
+        }
+
+        .Love_Story {
+            height: 10px;
+            width: 100%;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            // border: 2px blue solid;
+            line-height: 10px;
+
+
+            .p1 {
+                color: gray;
+                font-size: 2.5em;
+                font-weight: bold;
+                opacity: 0.4;
+            }
+
+            .p2 {
+                color: gray;
+                font-size: 3.5em;
+                color: rgb(254, 128, 149);
+                font-family: 'Great Vibes', cursive;
+            }
+
+        }
+
+        .imgs_div {
+            // border: 2px orangered solid;
+            width: fit-content;
+            position: absolute;
+            height: 100%;
+            display: flex;
+            flex-direction: column;
+            justify-content: space-around;
+
+            @media (max-width:800px) {
+                margin-left: 40px;
+            }
+
+            @media (max-width:680px) {
+                margin-left: 0px;
+            }
+
+            .line {
+                height: 95%;
+                width: 0;
+                border-right: 2px solid rgb(254, 128, 149);
+                position: absolute;
+                top: 100px;
+                transform: translateX(50px);
+
+                @media (max-width:650px) {
+                    display: none;
+                }
+            }
+
+            .img_Meet1,
+            .img_Meet2,
+            .img_Meet3,
+            .img_Meet4 {
+                height: 100px;
+                width: 100px;
+                border: 4px solid rgb(254, 128, 149);
+                border-radius: 50%;
+                background: url("./src/images/couple-1.jpg");
+                background-size: cover;
+                z-index: 1;
+
+                @media (max-width:620px) {
+                    height: 90px;
+                    width: 90px;
+                }
+            }
+
+            .img_Meet2 {
+                background: url("./src/images/couple-2.jpg");
+                background-size: cover;
+            }
+
+            .img_Meet3 {
+                background: url("./src/images/couple-3.jpg");
+                background-size: cover;
+            }
+
+            .img_Meet4 {
+                background: url("./src/images/couple-4.jpg");
+                background-size: cover;
+            }
+
+        }
+
+        .Meeting_outer {
+            // width: 875px;
+            margin: 40px 0px;
+            // border: 2px solid rebeccapurple;
+            display: flex;
+            flex-direction: row;
+            font-size: 16px;
+
+
+
+
+            .Meeting_details {
+                height: fit-content;
+                width: 42%;
+                border: 2px solid rgba(128, 128, 128, 0.426);
+                text-align: right;
+                margin: 10px 15px;
+                padding: 10px;
+
+                @media (max-width:1020px) {
+                    width: 40%;
+                }
+
+                @media (max-width:800px) {
+                    width: 70%;
+                }
+
+                @media (max-width:680px) {
+                    width: 75%;
+                }
+
+                &>* {
+                    margin-bottom: 10px;
+                }
+
+                span {
+                    font-size: 0.9em;
+                    color: rgb(254, 128, 149);
+                    font-weight: bold;
+                }
+
+                .p4 {
+                    color: gray;
+                    font-size: 1em;
+
+                }
+            }
+        }
+
+        .Meeting_outer:nth-of-type(odd) {
+            flex-direction: row-reverse;
+
+        }
+
+        @media (max-width:800px) {
+
+            .Meeting_outer:nth-of-type(even) {
+                flex-direction: row-reverse;
+
+            }
+        }
+
+    }
+
+}
