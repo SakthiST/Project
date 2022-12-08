@@ -109,6 +109,50 @@
   }
 }
 
+.Nav_bar2 {
+  background-color: black;
+  width: 100%;
+  padding: 70px 30px;
+  position: fixed;
+  z-index: 9;
+  -webkit-transform: translateY(-400px);
+          transform: translateY(-400px);
+}
+
+@media (min-width: 1020px) {
+  .Nav_bar2 {
+    display: none;
+  }
+}
+
+.Nav_bar2 .list_items li {
+  margin-bottom: 10px;
+  list-style: none;
+}
+
+.Nav_bar2 .list_items li a {
+  text-decoration: none;
+  color: white;
+}
+
+.Nav_bar2 .list_items li:hover a {
+  border-bottom: 3px solid #fe8095;
+}
+
+.Menu_on {
+  -webkit-transform: translateY(0px);
+          transform: translateY(0px);
+  -webkit-transition: 0.6s;
+  transition: 0.6s;
+}
+
+.Menu_off {
+  -webkit-transform: translateY(-400px);
+          transform: translateY(-400px);
+  -webkit-transition: 0.6s;
+  transition: 0.6s;
+}
+
 .First_page {
   height: 100vh;
   background: url("./src/images/bg_1.jpg");
