@@ -1,0 +1,117 @@
+.Seven_page {
+    // height: 100vh;
+    background-color: rgba(128, 128, 128, 0.457);
+    display: flex;
+    // justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    padding: 80px 0px;
+
+    .Place {
+        line-height: 10px;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+        margin-bottom: 80px;
+
+        .p3 {
+            color: gray;
+            font-size: 2.5em;
+            font-weight: bold;
+            opacity: 0.2;
+        }
+
+        .p4 {
+            color: gray;
+            font-size: 3.5em;
+            color: rgb(242, 87, 113);
+            font-family: 'Great Vibes', cursive;
+        }
+    }
+
+
+    .details_outer {
+        width: 90%;
+        display: flex;
+        gap: 20px;
+
+
+
+        @media (max-width:900px) {
+            flex-direction: column;
+            gap: 1px;
+            width: 60%;
+
+
+        }
+
+        @media (max-width:580px) {
+
+            width: 80%;
+
+
+        }
+
+        .reception,
+        .ceremony,
+        .party {
+            // height: 600px;
+            // width: 300px;
+            padding: 20px 0px;
+            // border: 2px solid black;
+            background-image: url("./src/images/place-1.jpg");
+            background-size: cover;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+
+            .white {
+                height: 95%;
+                width: 90%;
+                // border: 2px solid black;
+                background-color: white;
+                padding: 25px;
+                text-align: center;
+
+                &>* {
+                    margin-bottom: 20px;
+                }
+
+                p {
+                    color: rgb(105, 105, 105);
+                    font-size: 1.1em;
+                }
+
+                i {
+                    font-size: 50px;
+                    color: rgb(242, 87, 113);
+                }
+
+                .number {
+                    color: rgb(242, 87, 113);
+                    font-weight: bold;
+                    cursor: pointer;
+                }
+
+                .map {
+                    color: rgb(242, 87, 113);
+                    border: 2px rgba(105, 105, 105, 0.438) solid;
+                    padding: 8px 15px;
+                    background-color: white;
+                    cursor: pointer;
+                }
+
+            }
+        }
+
+        .ceremony {
+            background-image: url("./src/images/place-2.jpg");
+        }
+
+        .party {
+            background-image: url("./src/images/place-3.jpg");
+        }
+
+    }
+}

@@ -811,4 +811,149 @@
             flex-direction: row-reverse;
   }
 }
+
+.Seven_page {
+  background-color: rgba(128, 128, 128, 0.457);
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  padding: 80px 0px;
+}
+
+.Seven_page .Place {
+  line-height: 10px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  margin-bottom: 80px;
+}
+
+.Seven_page .Place .p3 {
+  color: gray;
+  font-size: 2.5em;
+  font-weight: bold;
+  opacity: 0.2;
+}
+
+.Seven_page .Place .p4 {
+  color: gray;
+  font-size: 3.5em;
+  color: #f25771;
+  font-family: 'Great Vibes', cursive;
+}
+
+.Seven_page .details_outer {
+  width: 90%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  gap: 20px;
+}
+
+@media (max-width: 900px) {
+  .Seven_page .details_outer {
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    gap: 1px;
+    width: 60%;
+  }
+}
+
+@media (max-width: 580px) {
+  .Seven_page .details_outer {
+    width: 80%;
+  }
+}
+
+.Seven_page .details_outer .reception,
+.Seven_page .details_outer .ceremony,
+.Seven_page .details_outer .party {
+  padding: 20px 0px;
+  background-image: url("./src/images/place-1.jpg");
+  background-size: cover;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.Seven_page .details_outer .reception .white,
+.Seven_page .details_outer .ceremony .white,
+.Seven_page .details_outer .party .white {
+  height: 95%;
+  width: 90%;
+  background-color: white;
+  padding: 25px;
+  text-align: center;
+}
+
+.Seven_page .details_outer .reception .white > *,
+.Seven_page .details_outer .ceremony .white > *,
+.Seven_page .details_outer .party .white > * {
+  margin-bottom: 20px;
+}
+
+.Seven_page .details_outer .reception .white p,
+.Seven_page .details_outer .ceremony .white p,
+.Seven_page .details_outer .party .white p {
+  color: dimgray;
+  font-size: 1.1em;
+}
+
+.Seven_page .details_outer .reception .white i,
+.Seven_page .details_outer .ceremony .white i,
+.Seven_page .details_outer .party .white i {
+  font-size: 50px;
+  color: #f25771;
+}
+
+.Seven_page .details_outer .reception .white .number,
+.Seven_page .details_outer .ceremony .white .number,
+.Seven_page .details_outer .party .white .number {
+  color: #f25771;
+  font-weight: bold;
+  cursor: pointer;
+}
+
+.Seven_page .details_outer .reception .white .map,
+.Seven_page .details_outer .ceremony .white .map,
+.Seven_page .details_outer .party .white .map {
+  color: #f25771;
+  border: 2px rgba(105, 105, 105, 0.438) solid;
+  padding: 8px 15px;
+  background-color: white;
+  cursor: pointer;
+}
+
+.Seven_page .details_outer .ceremony {
+  background-image: url("./src/images/place-2.jpg");
+}
+
+.Seven_page .details_outer .party {
+  background-image: url("./src/images/place-3.jpg");
+}
 /*# sourceMappingURL=style.css.map */
