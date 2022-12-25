@@ -96,6 +96,7 @@ image.forEach((value) => {
         Outer_black.style.width = "90%"
         Outer_black.style.opacity = "1"
 
+
         const copy = value.cloneNode();
 
         copy.style.height = "400px";
@@ -109,11 +110,11 @@ image.forEach((value) => {
 
         copy.addEventListener("click", () => {
             copy.style.height = "400px";
-            copy.style.width = "80%";
+            copy.style.width = "70%";
 
             copy.addEventListener("click", () => {
                 copy.style.height = "400px";
-                copy.style.width = "60%";
+                copy.style.width = "50%";
                 copy.style.cursor = "zoom-in";
             })
         })
