@@ -92,7 +92,7 @@ const cancel = document.querySelector(".cancel")
 image.forEach((value) => {
 
     value.addEventListener("click", () => {
-        Outer_black.style.height = "90%";
+        Outer_black.style.height = "600px";
         Outer_black.style.width = "90%"
         Outer_black.style.opacity = "1"
 
