@@ -13,6 +13,10 @@
     padding: 0px 30px;
     font-family: 'Times New Roman', Times, serif;
 
+
+
+
+
     .Hookup {
         a {
             font-size: 1.5rem;
@@ -21,10 +25,21 @@
             color: white;
             transition: 0.2s;
 
+
+
             &:hover {
 
                 color: black;
             }
+        }
+
+        .add2 {
+            color: black;
+
+            @media (max-width: 1020px) {
+                color: white;
+            }
+
         }
     }
 
@@ -45,7 +60,13 @@
                     text-decoration: none;
                     color: white;
 
+
                 }
+
+                .add2 {
+                    color: black;
+                }
+
 
 
                 .line {
@@ -86,6 +107,18 @@
     }
 }
 
+.add1 {
+    transition: 0.5s all;
+    background-color: white;
+    border: 1px solid gray;
+
+    @media (max-width: 1020px) {
+        border: none;
+    }
+}
+
+
+
 
 
 
@@ -93,6 +126,12 @@
 
     .Nav_bar {
         background-color: black;
+
+        .Hookup {
+            a {
+                color: white;
+            }
+        }
 
         .list_items {
             display: none;

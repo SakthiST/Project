@@ -39,6 +39,16 @@
   color: black;
 }
 
+.Nav_bar .Hookup .add2 {
+  color: black;
+}
+
+@media (max-width: 1020px) {
+  .Nav_bar .Hookup .add2 {
+    color: white;
+  }
+}
+
 .Nav_bar .list_items {
   -webkit-box-align: center;
       -ms-flex-align: center;
@@ -59,6 +69,10 @@
 .Nav_bar .list_items ol li a {
   text-decoration: none;
   color: white;
+}
+
+.Nav_bar .list_items ol li .add2 {
+  color: black;
 }
 
 .Nav_bar .list_items ol li .line {
@@ -88,9 +102,25 @@
   padding: 0px 5px;
 }
 
+.add1 {
+  -webkit-transition: 0.5s all;
+  transition: 0.5s all;
+  background-color: white;
+  border: 1px solid gray;
+}
+
+@media (max-width: 1020px) {
+  .add1 {
+    border: none;
+  }
+}
+
 @media (max-width: 1020px) {
   .Nav_bar {
     background-color: black;
+  }
+  .Nav_bar .Hookup a {
+    color: white;
   }
   .Nav_bar .list_items {
     display: none;
@@ -1037,8 +1067,6 @@
 .Nine_page .photos .image {
   height: 400px;
   width: calc(90%/4);
-  background-size: cover;
-  background-position: center;
   position: relative;
   display: -webkit-box;
   display: -ms-flexbox;
@@ -1049,6 +1077,13 @@
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
+  border-radius: 15px;
+  -webkit-transition: 0.8s;
+  transition: 0.8s;
+}
+
+.Nine_page .photos .image:hover {
+  scale: 1.1;
 }
 
 @media (max-width: 890px) {
@@ -1076,6 +1111,7 @@
   background-color: #f6748a;
   position: absolute;
   opacity: 0;
+  border-radius: 15px;
 }
 
 .Nine_page .photos .image .pink:hover {
@@ -1105,7 +1141,7 @@
   color: #fe8095;
 }
 
-.Nine_page .photos .image:nth-child(1) {
+.Nine_page .photos #i1 {
   background: url("./src/images/gallery-1.jpg");
   background-size: cover;
   background-position: center;
@@ -1113,7 +1149,7 @@
   cursor: zoom-in;
 }
 
-.Nine_page .photos .image:nth-child(2) {
+.Nine_page .photos #i2 {
   background: url("./src/images/gallery-2.jpg");
   background-size: cover;
   background-position: center;
@@ -1121,7 +1157,7 @@
   cursor: zoom-in;
 }
 
-.Nine_page .photos .image:nth-child(3) {
+.Nine_page .photos #i3 {
   background: url("./src/images/gallery-3.jpg");
   background-size: cover;
   background-position: center;
@@ -1129,7 +1165,7 @@
   cursor: zoom-in;
 }
 
-.Nine_page .photos .image:nth-child(4) {
+.Nine_page .photos #i4 {
   background: url("./src/images/gallery-4.jpg");
   background-size: cover;
   background-position: center;
@@ -1137,7 +1173,7 @@
   cursor: zoom-in;
 }
 
-.Nine_page .photos .image:nth-child(5) {
+.Nine_page .photos #i5 {
   background: url("./src/images/gallery-5.jpg");
   background-size: cover;
   background-position: center;
@@ -1145,7 +1181,7 @@
   cursor: zoom-in;
 }
 
-.Nine_page .photos .image:nth-child(6) {
+.Nine_page .photos #i6 {
   background: url("./src/images/gallery-6.jpg");
   background-size: cover;
   background-position: center;
@@ -1153,7 +1189,7 @@
   cursor: zoom-in;
 }
 
-.Nine_page .photos .image:nth-child(7) {
+.Nine_page .photos #i7 {
   background: url("./src/images/gallery-7.jpg");
   background-size: cover;
   background-position: center;
@@ -1161,11 +1197,57 @@
   cursor: zoom-in;
 }
 
-.Nine_page .photos .image:nth-child(8) {
+.Nine_page .photos #i8 {
   background: url("./src/images/gallery-8.jpg");
   background-size: cover;
   background-position: center;
   cursor: -webkit-zoom-in;
   cursor: zoom-in;
+}
+
+.Nine_page .photos .Outer_black {
+  height: 0px;
+  width: 0px;
+  border: 2px solid gray;
+  background-color: rgba(0, 0, 0, 0.948);
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  opacity: 0;
+  position: fixed;
+  top: 8%;
+  padding-bottom: 60px;
+  z-index: 1003;
+}
+
+.Nine_page .photos .Outer_black .Back_white {
+  height: 60px;
+  width: 100%;
+  background-color: white;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: end;
+      -ms-flex-pack: end;
+          justify-content: flex-end;
+  padding: 0px 25px;
+}
+
+.Nine_page .photos .Outer_black .Back_white span {
+  color: gray;
+  font-size: 40px;
 }
 /*# sourceMappingURL=style.css.map */
