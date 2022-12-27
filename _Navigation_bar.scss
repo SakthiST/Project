@@ -110,7 +110,7 @@
 .add1 {
     transition: 0.5s all;
     background-color: white;
-    border: 1px solid gray;
+    box-shadow: 0px 8px 20px gray;
 
     @media (max-width: 1020px) {
         border: none;

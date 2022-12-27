@@ -5,13 +5,14 @@
     display: flex;
     align-items: center;
     justify-content: center;
+    margin: 60px 0px;
 
     .Second_div {
         height: 100%;
         width: 80%;
         border: 3px solid rgba(0, 0, 0, 0.352);
-        border-top: none;
-        border-bottom: none;
+        // border-top: none;
+        // border-bottom: none;
         display: flex;
         align-items: stretch;
 
@@ -28,7 +29,7 @@
             width: 50%;
             background: url("./src/images/about.jpg");
             background-size: cover;
-            background-position: top center;
+            background-position: center;
             background-repeat: no-repeat;
             border-right: 3px solid rgba(0, 0, 0, 0.352);
 

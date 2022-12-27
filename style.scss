@@ -7,6 +7,10 @@
     margin: 0px;
 }
 
+html {
+    scroll-behavior: smooth;
+}
+
 // Nav_bar1
 @import "./Navigation_bar";
 
@@ -25,15 +29,15 @@
 // Fover_page
 @import "./Four_Page";
 
-// Five_page
 
+// Five_page
 // Six_page
 
 // Seven_page
 @import "./Seven_Page";
 
 // Eight_page
-
+@import "./Eight_Page";
 
 // Nine_page
 @import "./Nine_Page";
