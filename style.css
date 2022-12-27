@@ -1118,6 +1118,7 @@ html {
   width: 100%;
   border: none;
   outline: none;
+  background-color: white;
 }
 
 .Eight_page .outer_form .txt_area:nth-child(3) .t1 {
