@@ -7,10 +7,6 @@
   margin: 0px;
 }
 
-html {
-  scroll-behavior: smooth;
-}
-
 .Nav_bar {
   z-index: 10;
   height: 70px;
