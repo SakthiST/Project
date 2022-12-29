@@ -721,7 +721,7 @@ html {
   }
 }
 
-.Four_page .Four_div .imgs_div .line {
+.Four_page .Four_div .imgs_div .lines {
   height: 95%;
   width: 0;
   border-right: 2px solid #fe8095;
@@ -732,7 +732,7 @@ html {
 }
 
 @media (max-width: 650px) {
-  .Four_page .Four_div .imgs_div .line {
+  .Four_page .Four_div .imgs_div .lines {
     display: none;
   }
 }
@@ -1452,7 +1452,7 @@ html {
   font-family: 'Libre Caslon Text', serif;
 }
 
-@media (max-width: 660px) {
+@media (max-width: 820px) {
   .Ten_page {
     -webkit-box-orient: vertical;
     -webkit-box-direction: normal;
@@ -1463,9 +1463,10 @@ html {
 
 .Ten_page .hooup {
   width: 200px;
+  border: 2px solid black;
 }
 
-@media (max-width: 660px) {
+@media (max-width: 820px) {
   .Ten_page .hooup {
     width: 100%;
     padding: 0px 50px;
@@ -1520,6 +1521,14 @@ html {
           transform: translateY(-40px);
 }
 
+.Ten_page .quickLink,
+.Ten_page .link,
+.Ten_page .services,
+.Ten_page .haveQuestion {
+  border: 2px solid black;
+  width: 190px;
+}
+
 .Ten_page .quickLink > *,
 .Ten_page .link > *,
 .Ten_page .services > *,
@@ -1536,7 +1545,7 @@ html {
   font-weight: bold;
 }
 
-@media (max-width: 660px) {
+@media (max-width: 820px) {
   .Ten_page .quickLink,
   .Ten_page .link,
   .Ten_page .services,
@@ -1550,13 +1559,7 @@ html {
   width: 250px;
 }
 
-@media (max-width: 930px) {
-  .Ten_page .haveQuestion {
-    width: 100%;
-  }
-}
-
-@media (max-width: 660px) {
+@media (max-width: 1070px) {
   .Ten_page .haveQuestion {
     width: 100%;
     padding: 0px 50px;
