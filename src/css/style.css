@@ -1434,7 +1434,6 @@ html {
 }
 
 .Ten_page {
-  max-width: 1500px;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
