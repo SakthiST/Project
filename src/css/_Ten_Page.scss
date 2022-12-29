@@ -1,0 +1,111 @@
+.Ten_page {
+    // background-color: aqua;
+    max-width: 1500px;
+    display: flex;
+    justify-content: space-evenly;
+    gap: 10px;
+    flex-wrap: wrap;
+    flex-direction: row;
+    padding-top: 70px;
+    padding-bottom: 50px;
+    font-family: 'Libre Caslon Text', serif;
+
+    @media (max-width:660px) {
+        flex-direction: column;
+    }
+
+    .hooup {
+        width: 200px;
+        // border: 2px solid black;
+
+        @media (max-width:660px) {
+            width: 100%;
+            padding: 0px 50px;
+        }
+
+
+
+        &>* {
+            margin-bottom: 20px;
+        }
+
+        .icons {
+            display: flex;
+            align-items: center;
+            // justify-content: space-around;
+            margin-top: 70px;
+            gap: 25px;
+
+
+            &>* {
+                height: 50px;
+                width: 50px;
+                background-color: rgb(254, 128, 149);
+                border-radius: 50%;
+                display: flex;
+                align-items: center;
+                justify-content: center;
+                color: white;
+                font-size: 25px;
+            }
+
+            .twitter,
+            .faceBook,
+            .instagram {
+                transition: 1s;
+                cursor: pointer;
+
+                &:hover {
+                    transform: translateY(-40px);
+                }
+
+            }
+
+
+        }
+    }
+
+    .quickLink,
+    .link,
+    .services,
+    .haveQuestion {
+        // border: 2px solid black;
+
+        &>* {
+
+            margin-bottom: 20px;
+        }
+
+        a {
+            color: rgb(254, 128, 149);
+            text-decoration: none;
+            font-weight: bold;
+        }
+
+        @media (max-width:660px) {
+            width: 100%;
+            padding: 0px 50px;
+        }
+    }
+
+    .haveQuestion {
+        width: 250px;
+        // border: 2px solid black;
+
+        @media (max-width:930px) {
+            width: 100%;
+        }
+
+        @media (max-width:660px) {
+            width: 100%;
+            padding: 0px 50px;
+        }
+    }
+}
+
+.line {
+    height: 6px;
+    width: 100%;
+    background-color: black;
+    border-radius: 30px;
+}

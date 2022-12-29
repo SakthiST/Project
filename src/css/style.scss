@@ -8,8 +8,7 @@
 }
 
 html {
-    // scroll-behavior: smooth;
-
+    scroll-behavior: smooth;
 }
 
 // Nav_bar1
@@ -30,9 +29,9 @@ html {
 // Fover_page
 @import "./Four_Page";
 
-
 // Five_page
 // Six_page
+
 // Seven_page
 @import "./Seven_Page";
 
@@ -41,3 +40,6 @@ html {
 
 // Nine_page
 @import "./Nine_Page";
+
+// Ten_page
+@import "./Ten_Page";

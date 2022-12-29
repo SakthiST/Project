@@ -7,6 +7,10 @@
   margin: 0px;
 }
 
+html {
+  scroll-behavior: smooth;
+}
+
 .Nav_bar {
   z-index: 10;
   height: 70px;
@@ -186,7 +190,7 @@
 
 .First_page {
   height: 100vh;
-  background: url("./src/images/bg_1.jpg");
+  background: url("../images/bg_1.jpg");
   background-position: top center;
   background-size: cover;
   display: -webkit-box;
@@ -397,7 +401,7 @@
 
 .Second_page .Second_div .mar_img {
   width: 50%;
-  background: url("./src/images/about.jpg");
+  background: url("../images/about.jpg");
   background-size: cover;
   background-position: center;
   background-repeat: no-repeat;
@@ -517,7 +521,7 @@
 .Three_page .Three_div .top_design {
   height: 300px;
   width: 100%;
-  background-image: url("./src/images/top-bg.jpg");
+  background-image: url("../images/top-bg.jpg");
   background-size: cover;
   background-repeat: no-repeat;
   background-position: center;
@@ -580,7 +584,7 @@
   height: 250px;
   width: 250px;
   border-radius: 50%;
-  background-image: url("./src/images/groom.jpg");
+  background-image: url("../images/groom.jpg");
   background-size: cover;
   background-position: center;
   margin-bottom: 10px;
@@ -597,7 +601,7 @@
   height: 250px;
   width: 250px;
   border-radius: 50%;
-  background-image: url("./src/images/bride.jpg");
+  background-image: url("../images/bride.jpg");
   background-size: cover;
   background-position: center;
   margin-bottom: 10px;
@@ -606,7 +610,7 @@
 .Three_page .Three_div .bottom_design {
   width: 100%;
   height: 300px;
-  background-image: url("./src/images/bottom-bg.jpg");
+  background-image: url("../images/bottom-bg.jpg");
   background-size: cover;
   background-position: center;
   margin-bottom: 40px;
@@ -741,7 +745,7 @@
   width: 100px;
   border: 4px solid #fe8095;
   border-radius: 50%;
-  background: url("./src/images/couple-1.jpg");
+  background: url("../images/couple-1.jpg");
   background-size: cover;
   z-index: 1;
 }
@@ -757,17 +761,17 @@
 }
 
 .Four_page .Four_div .imgs_div .img_Meet2 {
-  background: url("./src/images/couple-2.jpg");
+  background: url("../images/couple-2.jpg");
   background-size: cover;
 }
 
 .Four_page .Four_div .imgs_div .img_Meet3 {
-  background: url("./src/images/couple-3.jpg");
+  background: url("../images/couple-3.jpg");
   background-size: cover;
 }
 
 .Four_page .Four_div .imgs_div .img_Meet4 {
-  background: url("./src/images/couple-4.jpg");
+  background: url("../images/couple-4.jpg");
   background-size: cover;
 }
 
@@ -920,7 +924,7 @@
 .Seven_page .details_outer .ceremony,
 .Seven_page .details_outer .party {
   padding: 20px 0px;
-  background-image: url("./src/images/place-1.jpg");
+  background-image: url("../images/place-1.jpg");
   background-size: cover;
   display: -webkit-box;
   display: -ms-flexbox;
@@ -982,11 +986,11 @@
 }
 
 .Seven_page .details_outer .ceremony {
-  background-image: url("./src/images/place-2.jpg");
+  background-image: url("../images/place-2.jpg");
 }
 
 .Seven_page .details_outer .party {
-  background-image: url("./src/images/place-3.jpg");
+  background-image: url("../images/place-3.jpg");
 }
 
 .Eight_page {
@@ -1317,7 +1321,7 @@
 }
 
 .Nine_page .photos #i1 {
-  background: url("./src/images/gallery-1.jpg");
+  background: url("../images/gallery-1.jpg");
   background-size: cover;
   background-position: center;
   cursor: -webkit-zoom-in;
@@ -1325,7 +1329,7 @@
 }
 
 .Nine_page .photos #i2 {
-  background: url("./src/images/gallery-2.jpg");
+  background: url("../images/gallery-2.jpg");
   background-size: cover;
   background-position: center;
   cursor: -webkit-zoom-in;
@@ -1333,7 +1337,7 @@
 }
 
 .Nine_page .photos #i3 {
-  background: url("./src/images/gallery-3.jpg");
+  background: url("../images/gallery-3.jpg");
   background-size: cover;
   background-position: center;
   cursor: -webkit-zoom-in;
@@ -1341,7 +1345,7 @@
 }
 
 .Nine_page .photos #i4 {
-  background: url("./src/images/gallery-4.jpg");
+  background: url("../images/gallery-4.jpg");
   background-size: cover;
   background-position: center;
   cursor: -webkit-zoom-in;
@@ -1349,7 +1353,7 @@
 }
 
 .Nine_page .photos #i5 {
-  background: url("./src/images/gallery-5.jpg");
+  background: url("../images/gallery-5.jpg");
   background-size: cover;
   background-position: center;
   cursor: -webkit-zoom-in;
@@ -1357,7 +1361,7 @@
 }
 
 .Nine_page .photos #i6 {
-  background: url("./src/images/gallery-6.jpg");
+  background: url("../images/gallery-6.jpg");
   background-size: cover;
   background-position: center;
   cursor: -webkit-zoom-in;
@@ -1365,7 +1369,7 @@
 }
 
 .Nine_page .photos #i7 {
-  background: url("./src/images/gallery-7.jpg");
+  background: url("../images/gallery-7.jpg");
   background-size: cover;
   background-position: center;
   cursor: -webkit-zoom-in;
@@ -1373,7 +1377,7 @@
 }
 
 .Nine_page .photos #i8 {
-  background: url("./src/images/gallery-8.jpg");
+  background: url("../images/gallery-8.jpg");
   background-size: cover;
   background-position: center;
   cursor: -webkit-zoom-in;
@@ -1427,5 +1431,143 @@
 .Nine_page .photos .Outer_black .Back_white span {
   color: gray;
   font-size: 40px;
+}
+
+.Ten_page {
+  max-width: 1500px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: space-evenly;
+      -ms-flex-pack: space-evenly;
+          justify-content: space-evenly;
+  gap: 10px;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
+  padding-top: 70px;
+  padding-bottom: 50px;
+  font-family: 'Libre Caslon Text', serif;
+}
+
+@media (max-width: 660px) {
+  .Ten_page {
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+  }
+}
+
+.Ten_page .hooup {
+  width: 200px;
+}
+
+@media (max-width: 660px) {
+  .Ten_page .hooup {
+    width: 100%;
+    padding: 0px 50px;
+  }
+}
+
+.Ten_page .hooup > * {
+  margin-bottom: 20px;
+}
+
+.Ten_page .hooup .icons {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  margin-top: 70px;
+  gap: 25px;
+}
+
+.Ten_page .hooup .icons > * {
+  height: 50px;
+  width: 50px;
+  background-color: #fe8095;
+  border-radius: 50%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  color: white;
+  font-size: 25px;
+}
+
+.Ten_page .hooup .icons .twitter,
+.Ten_page .hooup .icons .faceBook,
+.Ten_page .hooup .icons .instagram {
+  -webkit-transition: 1s;
+  transition: 1s;
+  cursor: pointer;
+}
+
+.Ten_page .hooup .icons .twitter:hover,
+.Ten_page .hooup .icons .faceBook:hover,
+.Ten_page .hooup .icons .instagram:hover {
+  -webkit-transform: translateY(-40px);
+          transform: translateY(-40px);
+}
+
+.Ten_page .quickLink > *,
+.Ten_page .link > *,
+.Ten_page .services > *,
+.Ten_page .haveQuestion > * {
+  margin-bottom: 20px;
+}
+
+.Ten_page .quickLink a,
+.Ten_page .link a,
+.Ten_page .services a,
+.Ten_page .haveQuestion a {
+  color: #fe8095;
+  text-decoration: none;
+  font-weight: bold;
+}
+
+@media (max-width: 660px) {
+  .Ten_page .quickLink,
+  .Ten_page .link,
+  .Ten_page .services,
+  .Ten_page .haveQuestion {
+    width: 100%;
+    padding: 0px 50px;
+  }
+}
+
+.Ten_page .haveQuestion {
+  width: 250px;
+}
+
+@media (max-width: 930px) {
+  .Ten_page .haveQuestion {
+    width: 100%;
+  }
+}
+
+@media (max-width: 660px) {
+  .Ten_page .haveQuestion {
+    width: 100%;
+    padding: 0px 50px;
+  }
+}
+
+.line {
+  height: 6px;
+  width: 100%;
+  background-color: black;
+  border-radius: 30px;
 }
 /*# sourceMappingURL=style.css.map */

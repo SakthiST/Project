@@ -61,7 +61,7 @@
             // width: 300px;
             padding: 20px 0px;
             // border: 2px solid black;
-            background-image: url("./src/images/place-1.jpg");
+            background-image: url("../images/place-1.jpg");
             background-size: cover;
             display: flex;
             justify-content: center;
@@ -107,11 +107,11 @@
         }
 
         .ceremony {
-            background-image: url("./src/images/place-2.jpg");
+            background-image: url("../images/place-2.jpg");
         }
 
         .party {
-            background-image: url("./src/images/place-3.jpg");
+            background-image: url("../images/place-3.jpg");
         }
 
     }
