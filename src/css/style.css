@@ -1434,6 +1434,7 @@ html {
 }
 
 .Ten_page {
+  background-color: rgba(128, 128, 128, 0.308);
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -1463,7 +1464,6 @@ html {
 
 .Ten_page .hooup {
   width: 200px;
-  border: 2px solid black;
 }
 
 @media (max-width: 820px) {
@@ -1525,7 +1525,6 @@ html {
 .Ten_page .link,
 .Ten_page .services,
 .Ten_page .haveQuestion {
-  border: 2px solid black;
   width: 190px;
 }
 
